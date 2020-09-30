@@ -336,7 +336,7 @@ namespace LocadoraETL
 
                         //DM_SOCIO
 
-                        commandSQL.CommandText = $"SELECT TOP(1) ID_ART FROM DM_SOCIO WHERE NOM_SOC = {row["NOM_SOC"]}";
+                        commandSQL.CommandText = $"SELECT TOP(1) ID_SOC FROM DM_SOCIO WHERE NOM_SOC = {row["NOM_SOC"]}";
 
                         commandSQL.CommandType = CommandType.Text;
 
@@ -345,7 +345,7 @@ namespace LocadoraETL
 
                         // DM_TITULO
 
-                        commandSQL.CommandText = $"SELECT TOP(1) ID_ART FROM DM_TITULO WHERE TPO_TITULO = {row["TPO_TITULO"]} AND CLA_TITULO = {row["CLA_TIT"]} AND DSC_TITULO = {row["DSC_TIT"]}";
+                        commandSQL.CommandText = $"SELECT TOP(1) ID_TITULO FROM DM_TITULO WHERE TPO_TITULO = {row["TPO_TITULO"]} AND CLA_TITULO = {row["CLA_TIT"]} AND DSC_TITULO = {row["DSC_TIT"]}";
 
                         commandSQL.CommandType = CommandType.Text;
 
@@ -363,7 +363,7 @@ namespace LocadoraETL
 
                         // DM_GRAVADORA
 
-                        commandSQL.CommandText = $"SELECT TOP(1) ID_ART FROM DM_GRAVADORA WHERE UF_GRAV = {row["UF_GRAV"]} AND NAS_BRAS = {row["NAS_BRAS"]} AND NOM_GRAV = {row["NOM_GRAV"]}";
+                        commandSQL.CommandText = $"SELECT TOP(1) ID_GRAV FROM DM_GRAVADORA WHERE UF_GRAV = {row["UF_GRAV"]} AND NAS_BRAS = {row["NAS_BRAS"]} AND NOM_GRAV = {row["NOM_GRAV"]}";
 
                         commandSQL.CommandType = CommandType.Text;
 
